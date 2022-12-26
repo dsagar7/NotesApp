@@ -108,7 +108,7 @@ body {
 .note {
     border-radius: 10px;
     height: 200px;
-    background-color: #feff93;
+    background-color: #ffffd3;
     /* background-color: #feff97; */
     padding: 1rem;
     overflow: hidden;
@@ -117,11 +117,12 @@ body {
     align-items: end;
     /* justify-content: space-between; */
     gap: 0.4rem;
+    font-size: 1rem;
 }
 
 .note:hover{
     /* background-color: #feff7c; */
-    background-color: #fff093;
+    background-color: #feff97;
 
 }
 
@@ -211,10 +212,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0.6rem;
     }
-
-    .note {
-        font-size: 0.95rem;
-    }
 }
 
 @media screen and (max-width: 769px) {
@@ -233,9 +230,6 @@ body {
         padding: 1rem 2rem;
     }
 
-    .note {
-        font-size: 0.9rem;
-    }
 
     .logo {
         font-size: 0.8rem;
@@ -252,18 +246,30 @@ body {
     }
 
     .notes__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0.4rem;
         padding: 0;
     }
 
     .note {
-        font-size: 0.85rem;
+        font-size: 0.99rem;
     }
 
     .add__notes__btn button {
         width: 3.8rem;
         height: 3.8rem;
+    }
+}
+
+
+@media screen and (max-width: 377px) {
+    .notes__container {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+        padding: 0;
+    }
+    .note {
+        font-size: 0.97rem;
     }
 }
 
