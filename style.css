@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-family: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #FF8A71; */
+    background-color: #c8e3ff;
+    font-family: var(--font-family);
+}
+
+.section__padding {
+    padding: 1.5rem 4rem;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search__box {
+    flex: 0.6;
+    width: 100%;
+}
+
+.search__box input {
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #031B34;
+    font-weight: 600;
+}
+
+.logo {
+    flex: 0.4;
+    color: #031b34;
+    cursor: pointer;
+
+}
+
+.add__note{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 200px;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    /* gap: 0.4rem; */
+}
+
+.add__note__detail {
+    color: white;
+    width: 100%;
+}
+
+.add__note__detail textarea{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    height: 8.5rem;
+    resize: none;
+}
+
+.add__notes__btn {
+    position:sticky;
+    bottom: 0px;
+    /* position: relative; */
+    font-size: 1.75rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    color: #FFFFFF;
+    background-color: #031B34;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+.add__notes__btn:hover{
+    background-color: #feff93;
+    color: #031B34;
+}
+.add__note__detail textarea::-webkit-scrollbar{
+    display: none;
+}
+
+
+.note {
+    border-radius: 10px;
+    height: 200px;
+    background-color: #feff93;
+    /* background-color: #feff97; */
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* justify-content: space-between; */
+    gap: 0.4rem;
+}
+
+.note:hover{
+    /* background-color: #feff7c; */
+    background-color: #fff093;
+
+}
+
+.notes__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.6rem;
+
+}
+
+.note__detail {
+    
+    width: 100%;
+}
+
+.note__detail p{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #031b34;
+    font-weight: 600;
+    height: 8.1rem;
+    resize: none;
+    /* overflow-wrap: anywhere; */
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+.note__text__edit{
+    width: 100%;
+    background: none;
+    /* outline: none; */
+    /* border: none; */
+    color: #031b34;
+    font-weight: 600;
+    height: 8.1rem;
+    resize: none;
+    overflow: auto;
+    
+}
+.note__detail p::-webkit-scrollbar{
+    display: none;
+}
+
+.note__action__btn{
+    width: 5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #ff6747;
+    background: #FFFFFF;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.note__action__btn:hover{
+    background-color: #ff6747;
+    color: #FFFFFF;
+}
+
+.note__action__delete{
+    border-radius: 10px;
+    width: 3rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.note__action{
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .notes__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.6rem;
+    }
+
+    .note {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .section__padding {
+        padding: 2rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .notes__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+        padding: 1rem 2rem;
+    }
+
+    .note {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 0.8rem;
+    }
+
+    .search__box input {
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding {
+        padding: 1.5rem;
+    }
+
+    .notes__container {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+        padding: 0;
+    }
+
+    .note {
+        font-size: 0.85rem;
+    }
+
+    .add__notes__btn button {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+
+<body>
+    <div class="main__container">
+        <div class="main section__padding">
+
+
+            <div class="header">
+                <div class="logo">
+                    <h1 id="logo">Notes App</h1>
+                </div>
+                <div class="search__box">
+                    <input type="text" id="myInputSearch" onkeyup="searchFunction()" placeholder="Search...">
+                </div>
+            </div>
+
+
+            <div class="notes__container">
+                <div class="add__note">
+                    <div class="add__note__detail">
+                        <textarea class="add__note__detail__text" placeholder="Type something!!"></textarea>
+                    </div>
+                    <button class="add__notes__btn">+</button>
+                </div>
+
+                <!-- <div class="note">
+                    <div class="note__action">
+                        <button class="note__action__btn">Done</button>
+                        <button class="note__action__delete"><img src="icons/trash-fill.svg" alt="delete"></button>   
+                     </div>
+                    <div class="note__detail">
+                        <textarea placeholder="Type something!!"></textarea>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
