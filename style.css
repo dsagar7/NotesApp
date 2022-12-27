@@ -252,24 +252,32 @@ body {
     }
 
     .note {
-        font-size: 0.99rem;
+        font-size: 0.96rem;
     }
 
     .add__notes__btn button {
         width: 3.8rem;
         height: 3.8rem;
     }
+    .note__action__btn{
+        width: 3rem;
+        font-size: 0.8rem;
+    }
+    .note__action__delete{
+        width: 2rem;
+    }
+        
 }
 
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 321px) {
     .notes__container {
         grid-template-columns: 1fr;
         gap: 0.4rem;
         padding: 0;
     }
     .note {
-        font-size: 0.97rem;
+        font-size: 0.97rem;  
     }
 }
 
