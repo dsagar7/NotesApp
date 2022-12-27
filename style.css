@@ -16,6 +16,16 @@ body {
     font-family: var(--font-family);
 }
 
+.main__container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    max-width: 1440px;
+    width: 100%;
+}
+
 .section__padding {
     padding: 1.5rem 4rem;
 
@@ -271,13 +281,16 @@ body {
 
 
 @media screen and (max-width: 321px) {
+    .note {
+        font-size: 0.97rem;  
+    }
+}
+
+@media screen and (max-width: 270px) {
     .notes__container {
         grid-template-columns: 1fr;
         gap: 0.4rem;
         padding: 0;
-    }
-    .note {
-        font-size: 0.97rem;  
     }
 }
 
