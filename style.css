@@ -242,7 +242,7 @@ body {
 
 @media screen and (max-width: 550px) {
     .section__padding {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .notes__container {
